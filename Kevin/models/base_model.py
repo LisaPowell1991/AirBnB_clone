@@ -2,10 +2,10 @@
 """
 A module that defines all common attributes/methods
 """
-import uuid
-from datetime import datetime
-import models
-
+#type: ignore
+import uuid #type: ignore
+from datetime import datetime #type: ignore
+import models 
 
 class BaseModel:
     """
@@ -21,22 +21,30 @@ class BaseModel:
         self.updated_at = datetime.fromisoformat(
           kwargs.get('updated_at')) if 'updated_at' in kwargs else datetime.now()
         if not kwargs:
-          storage.new(self)
+          models.storage.new(self)
 
     def save(self):
         """
         Updates the updated_at attribute with current datetime
         """
-        pass
+        self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """
         Returns a dictionary of the object's attributes
         """
-        pass
+        class_name = self.__class__.__name__
+        return {
+          "__class__": class_name,
+          "id": self.id,
+          "created_at": self.created_at.isoformat(),
+          "updated_at": self.updated_at.isoformat()
+        }
 
     def __str__(self):
         """
         Prints the object's attributes
         """
-        pass
+        class_name = self.__class__.__name__
+        return ("[{}] ({}) {}".format(class_name, self.id, self.__dict__))
