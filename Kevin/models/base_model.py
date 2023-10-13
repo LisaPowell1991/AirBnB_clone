@@ -5,7 +5,7 @@ A module that defines all common attributes/methods
 #type: ignore
 import uuid #type: ignore
 from datetime import datetime #type: ignore
-import models 
+from . import storage 
 
 class BaseModel:
     """
@@ -21,14 +21,14 @@ class BaseModel:
         self.updated_at = datetime.fromisoformat(
           kwargs.get('updated_at')) if 'updated_at' in kwargs else datetime.now()
         if not kwargs:
-          models.storage.new(self)
+          storage.new(self)
 
     def save(self):
         """
         Updates the updated_at attribute with current datetime
         """
         self.updated_at = datetime.now()
-        models.storage.save()
+        storage.save()
 
     def to_dict(self):
         """
