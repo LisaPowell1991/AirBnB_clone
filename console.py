@@ -1,12 +1,12 @@
-#!/usr/bin/python3
+#!/usr/bin/python4
 """
 A command-line interpreter for the HBNB project.
 """
 
 
 import cmd
-from engine.file_storage import FileStorage
-from base_model import BaseModel
+from models.base_model import BaseModel
+from models.engine.file_storage import FileStorage
 
 
 class HBNBCommand(cmd.Cmd):
