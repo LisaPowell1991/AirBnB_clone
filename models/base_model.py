@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 """ A module that consists of the BaseModel class. """
+
 import uuid
 from datetime import datetime
-from engine.file_storage import FileStorage
+
+from models import storage 
 
 
 class BaseModel:
     """
     A class that represents a base model.
     """
+
     def __init__(self, *args, **kwargs):
         """
         Initializes the BaseModel class.
@@ -21,14 +24,14 @@ class BaseModel:
             for key, value in kwargs.items():
                 if key != '__class__':
                     if key == 'created_at' or key == 'updated_at':
-                        setattr(self, key, datetime.strptime
-                                (value, "%Y-%m-%dT%H:%M:%S.%f"))
+                        setattr(self, key, datetime.strptime(
+                                value, "%Y-%m-%dT%H:%M:%S.%f"))
                     else:
                         setattr(self, key, value)
-        else:
-            self.id = str(uuid.uuid4())
-            self.created_at = self.updated_at = datetime.now()
-            storage.new(self)
+                else:
+                    self.id = str(uuid.uuid4())
+                    self.created_at = self.updated_at = datetime.now()
+                    storage.new(self)
 
     def save(self):
         """
@@ -39,7 +42,7 @@ class BaseModel:
 
     def to_dict(self):
         """
-        Converts the object to a dictionary.
+        onverts the object to a dictionary.
 
         Returns:
         dict: A dictionary containing the instance's attributes and values.
@@ -55,7 +58,8 @@ class BaseModel:
         A string representation of the object.
 
         Returns:
-        str: Str in the format "[<class name>] (<self.id>) <self.__dict__>".
+        str: A string in the format
+        "[<class name>] (<self.id>) <self.__dict__>".
         """
         class_name = self.__class__.__name__
         return '[{}] ({}) {}'.format(class_name, self.id, self.__dict__)
