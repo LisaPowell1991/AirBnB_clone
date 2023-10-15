@@ -217,7 +217,7 @@ class TestUser_save_method(unittest.TestCase):
         """
         u1 = User()
         with self.assertRaises(TypeError):
-          u1.save(None)
+            u1.save(None)
 
 
 class TestUser_to_dict_method(unittest.TestCase):
@@ -281,7 +281,7 @@ class TestUser_to_dict_method(unittest.TestCase):
         """
         u1 = User()
         with self.assertRaises(TypeError):
-           u1.to_dict(None)
+            u1.to_dict(None)
 
     def test_instantiation_to_dict_with_attributes(self):
         """
