@@ -79,7 +79,7 @@ class HBNBCommand(cmd.Cmd):
 
         Usage: all or all<class_name>
         """
-        objects = storage.all()
+        objects = FileStorage.all(self)
         if not arg:
             print([str(obj) for obj in objects.values()])
         else:
