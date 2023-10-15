@@ -3,15 +3,14 @@
 
 import uuid
 from datetime import datetime
-from models import storage 
 
 
 class BaseModel:
     """
     A class that represents a base model.
     """
-
     def __init__(self, *args, **kwargs):
+        from engine.file_storage import FileStorage
         """
         Initializes the BaseModel class.
 
@@ -27,27 +26,27 @@ class BaseModel:
                                 value, "%Y-%m-%dT%H:%M:%S.%f"))
                     else:
                         setattr(self, key, value)
-                else:
-                    self.id = str(uuid.uuid4())
-                    self.created_at = self.updated_at = datetime.now()
-                    storage.new(self)
+        else:
+            self.id = str(uuid.uuid4())
+            self.created_at = self.updated_at = datetime.now()
+            FileStorage().new(self)
 
     def save(self):
-        """
-        Updates the updated_at attribute.
-        """
+        from engine.file_storage import FileStorage
+        """ Updates the updated_at attribute. """
         self.updated_at = datetime.now()
-        storage.save()
+        FileStorage().save()
 
     def to_dict(self):
         """
-        onverts the object to a dictionary.
+        Converts the object to a dictionary.
 
         Returns:
-        dict: A dictionary containing the instance's attributes and values.
+        dict:Dictionary containing the instance's attributes and values.
         """
         obj_dict = self.__dict__.copy()
         obj_dict['__class__'] = self.__class__.__name__
+        obj_dict['id'] = self.id
         obj_dict['created_at'] = self.created_at.isoformat()
         obj_dict['updated_at'] = self.updated_at.isoformat()
         return obj_dict
