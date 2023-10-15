@@ -29,7 +29,7 @@ class BaseModel:
         else:
             self.id = str(uuid.uuid4())
             self.created_at = self.updated_at = datetime.now()
-            FileStorage().new(self)
+            storage.new(self)
 
     def save(self):
         from .engine.file_storage import FileStorage
