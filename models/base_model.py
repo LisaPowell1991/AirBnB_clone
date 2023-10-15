@@ -10,7 +10,6 @@ class BaseModel:
     A class that represents a base model.
     """
     def __init__(self, *args, **kwargs):
-        from .engine.file_storage import FileStorage
         """
         Initializes the BaseModel class.
 
@@ -18,6 +17,7 @@ class BaseModel:
         *args: unused.
         **kwargs: Arbitrary keyword arguments.
         """
+        from models.engine.file_storage import FileStorage
         if kwargs is not None and kwargs != {}:
             for key, value in kwargs.items():
                 if key != '__class__':
@@ -29,11 +29,11 @@ class BaseModel:
         else:
             self.id = str(uuid.uuid4())
             self.created_at = self.updated_at = datetime.now()
-            storage.new(self)
+            FileStorage().new(self)
 
     def save(self):
-        from .engine.file_storage import FileStorage
         """ Updates the updated_at attribute. """
+        from models.engine.file_storage import FileStorage
         self.updated_at = datetime.now()
         FileStorage().save()
 
