@@ -18,7 +18,7 @@ class BaseModel:
         *args: unused.
         **kwargs: Arbitrary keyword arguments.
         """
-        if kwargs:
+        if kwargs is not None and kwargs != {}:
             for key, value in kwargs.items():
                 if key != '__class__':
                     if key == 'created_at' or key == 'updated_at':
@@ -26,16 +26,16 @@ class BaseModel:
                                 value, "%Y-%m-%dT%H:%M:%S.%f"))
                     else:
                         setattr(self, key, value)
-                else:
-                    self.id = str(uuid.uuid4())
-                    self.created_at = self.updated_at = datetime.now()
-                    FileStorage.new(self)
+        else:
+            self.id = str(uuid.uuid4())
+            self.created_at = self.updated_at = datetime.now()
+            FileStorage().new(self)
 
     def save(self):
         from .engine.file_storage import FileStorage
         """ Updates the updated_at attribute. """
         self.updated_at = datetime.now()
-        storage.save()
+        FileStorage().save()
 
     def to_dict(self):
         """
@@ -46,6 +46,7 @@ class BaseModel:
         """
         obj_dict = self.__dict__.copy()
         obj_dict['__class__'] = self.__class__.__name__
+        obj_dict['id'] = self.id
         obj_dict['created_at'] = self.created_at.isoformat()
         obj_dict['updated_at'] = self.updated_at.isoformat()
         return obj_dict

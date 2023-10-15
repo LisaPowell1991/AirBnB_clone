@@ -12,6 +12,7 @@ class TestBaseModel_Instantiation(unittest.TestCase):
     """
     Unittests for testing instantiation of BaseModel class
     """
+
     def test_instantiation(self):
         """ Test instantiation of BaseModel class """
         b1 = __import__("models.base_model").base_model.BaseModel()
@@ -26,7 +27,7 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         """
         Test instantiation of BaseModel class with id
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         self.assertTrue(hasattr(b1, "id"))
 
     def test_instantiation_id_type(self):
@@ -58,7 +59,7 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         """
         Test that created_at exists in instantiation
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         self.assertTrue(hasattr(b1, "created_at"))
 
     def test_instantiation_created_at_type(self):
@@ -70,7 +71,7 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         """
         Test that updated_at exists in instantiation
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         self.assertTrue(hasattr(b1, "updated_at"))
 
     def test_instantiation_updated_at_type(self):
@@ -82,8 +83,8 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         """
         Tests that created_at and updated_at are same at creation
         """
-        date_now = datetime.now()
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        datetime.now()
+        b1 = BaseModel()
         diff = b1.updated_at - b1.created_at
         self.assertTrue(abs(diff.total_seconds()) < 1)
 
@@ -96,7 +97,7 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         """ Test that created_at is public """
         self.assertEqual(datetime, type(__import__(
                          "models.base_model").
-                         base_model.BaseModel().created_at))
+            base_model.BaseModel().created_at))
 
     def test_instantiation_updated_at_public(self):
         """ Test that updated_at is public """
@@ -110,7 +111,7 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         """
         dt = datetime.today()
         dt_repr = repr(dt)
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         b1.id = "123456"
         b1.created_at = b1.updated_at = dt
         b1_str = b1.__str__()
@@ -123,15 +124,16 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         """
         Test that str returns the correct output type
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
-        string = "[{}] ({}) {}".format("BaseModel", b1.id, str(b1.__dict__))
+        b1 = BaseModel()
+        string = "[{}] ({}) {}".format(
+            "BaseModel", b1.id, str(b1.__dict__))
         self.assertEqual(str(b1), string)
 
     def test_instantiation_str_return_2(self):
         """
         Test that str returns the correct output type 2
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         string = "[BaseModel] ({}) {}".format(b1.id, b1.__dict__)
         self.assertEqual(string, str(b1))
 
@@ -141,8 +143,8 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         """
         dt = datetime.today()
         dt_iso = dt.isoformat()
-        b1 = __import__("models.base_model").base_model.BaseModel(
-          "12", id="345", created_at=dt_iso, updated_at=dt_iso)
+        b1 = BaseModel(
+            "12", id="345", created_at=dt_iso, updated_at=dt_iso)
         self.assertEqual(b1.id, "345")
         self.assertEqual(b1.created_at, dt)
         self.assertEqual(b1.updated_at, dt)
@@ -152,14 +154,13 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         Test instantiation with unused kwargs
         """
         with self.assertRaises(TypeError):
-            __import__("models.base_model").base_model.BaseModel(
-              id=None, created_at=None, updated_at=None)
+            BaseModel(id=None, created_at=None, updated_at=None)
 
     def test_instantiation_without_args(self):
         """
         Test instantiation with unused args
         """
-        b1 = __import__("models.base_model").base_model.BaseModel(None)
+        b1 = BaseModel(None)
         self.assertNotIn(None, b1.__dict__.values())
 
     def test_instantiation_storage(self):
@@ -167,20 +168,21 @@ class TestBaseModel_Instantiation(unittest.TestCase):
         Test if new instance is stored in storage
         """
         self.assertIn(
-          __import__("models.base_model").base_model.BaseModel(),
-          __import__(
-            "models.engine.file_storage").FileStorage().all().values())
+            __import__("models.base_model").base_model.BaseModel(),
+            __import__(
+                "models.engine.file_storage").FileStorage().all().values())
 
 
 class TestBaseModel_save_method(unittest.TestCase):
     """
     Unittest for BaseModel save method
     """
+
     def test_instantiation_save(self):
         """
         Test if save method saves instance to storage
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         updated_at_1 = b1.updated_at
         b1.save()
         updated_at_2 = b1.updated_at
@@ -190,7 +192,7 @@ class TestBaseModel_save_method(unittest.TestCase):
         """
         Test if save method saves instance to storage multiple times
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         sleep(0.1)
         updated_at_1 = b1.updated_at
         b1.save()
@@ -204,7 +206,7 @@ class TestBaseModel_save_method(unittest.TestCase):
         """
         Test if save method takes argument
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         with self.assertRaises(TypeError):
             b1.save(None)
 
@@ -213,19 +215,21 @@ class TestBaseModel_to_dict_method(unittest.TestCase):
     """
     Unittests for BaseModel to_dict method
     """
+
     def test_instantiation_to_dict(self):
         """
         Test if to_dict method returns a dictionary
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         dic = b1.to_dict()
         self.assertNotEqual(dic, b1.__dict__)
 
     def test_instantiation_to_dict_datetime(self):
         """
-        Test if to_dict method returns created_at and updated_at as strings
+        Test if to_dict method returns created_at
+        and updated_at as strings
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         dic = b1.to_dict()
         self.assertEqual(type(dic['created_at']), str)
         self.assertEqual(type(dic['updated_at']), str)
@@ -234,14 +238,14 @@ class TestBaseModel_to_dict_method(unittest.TestCase):
         """
         Test to_dict output type
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         self.assertTrue(dict, type(b1.to_dict()))
 
     def test_instantiation_to_dict_keys(self):
         """
         Test to_dict keys
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         self.assertIn("id", b1.to_dict())
         self.assertIn("created_at", b1.to_dict())
         self.assertIn("updated_at", b1.to_dict())
@@ -251,15 +255,15 @@ class TestBaseModel_to_dict_method(unittest.TestCase):
         """
         Test to_dict output
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         dt = datetime.today()
         b1.id = "123456"
         b1.created_at = b1.updated_at = dt
         dic = {
-          'id': '123456',
-          '__class__': 'BaseModel',
-          'created_at': dt.isoformat(),
-          'updated_at': dt.isoformat()
+            'id': '123456',
+            '__class__': 'BaseModel',
+            'created_at': dt.isoformat(),
+            'updated_at': dt.isoformat()
         }
         self.assertDictEqual(b1.to_dict(), dic)
 
@@ -267,7 +271,7 @@ class TestBaseModel_to_dict_method(unittest.TestCase):
         """
         Test to_dict with arguments
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         with self.assertRaises(TypeError):
             b1.to_dict(None)
 
@@ -275,12 +279,12 @@ class TestBaseModel_to_dict_method(unittest.TestCase):
         """
         Test to_dict with extra attributes
         """
-        b1 = __import__("models.base_model").base_model.BaseModel()
+        b1 = BaseModel()
         b1.name = "Test"
         b1.age = 5
         dic = b1.to_dict()
         attrb = [
-          "id", "created_at", "updated_at", "name", "age", "__class__"]
+            "id", "created_at", "updated_at", "name", "age", "__class__"]
         self.assertCountEqual(attrb, dic.keys())
         self.assertEqual(dic["name"], "Test")
         self.assertEqual(dic["age"], 5)
