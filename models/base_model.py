@@ -10,11 +10,7 @@ class BaseModel:
     A class that represents a base model.
     """
     def __init__(self, *args, **kwargs):
-<<<<<<< HEAD
         from .engine.file_storage import FileStorage
-=======
-        from models.engine.file_storage import FileStorage
->>>>>>> main
         """
         Initializes the BaseModel class.
 
@@ -36,11 +32,7 @@ class BaseModel:
             storage.new(self)
 
     def save(self):
-<<<<<<< HEAD
         from .engine.file_storage import FileStorage
-=======
-        from models.engine.file_storage import FileStorage
->>>>>>> main
         """ Updates the updated_at attribute. """
         self.updated_at = datetime.now()
         FileStorage().save()
