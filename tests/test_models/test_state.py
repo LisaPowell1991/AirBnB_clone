@@ -217,7 +217,7 @@ class TestState_save_method(unittest.TestCase):
         """
         s1 = State()
         with self.assertRaises(TypeError):
-          s1.save(None)
+            s1.save(None)
 
 
 class TestState_to_dict_method(unittest.TestCase):
@@ -281,7 +281,7 @@ class TestState_to_dict_method(unittest.TestCase):
         """
         s1 = State()
         with self.assertRaises(TypeError):
-           s1.to_dict(None)
+            s1.to_dict(None)
 
     def test_instantiation_to_dict_with_attributes(self):
         """

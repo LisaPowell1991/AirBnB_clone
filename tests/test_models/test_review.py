@@ -217,7 +217,7 @@ class TestReview_save_method(unittest.TestCase):
         """
         r1 = Review()
         with self.assertRaises(TypeError):
-          r1.save(None)
+            r1.save(None)
 
 
 class TestReview_to_dict_method(unittest.TestCase):
@@ -281,7 +281,7 @@ class TestReview_to_dict_method(unittest.TestCase):
         """
         r1 = Review()
         with self.assertRaises(TypeError):
-           r1.to_dict(None)
+            r1.to_dict(None)
 
     def test_instantiation_to_dict_with_attributes(self):
         """

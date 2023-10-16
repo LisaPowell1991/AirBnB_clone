@@ -217,7 +217,7 @@ class TestAmenity_save_method(unittest.TestCase):
         """
         a1 = Amenity()
         with self.assertRaises(TypeError):
-          a1.save(None)
+            a1.save(None)
 
 
 class TestAmenity_to_dict_method(unittest.TestCase):
@@ -281,7 +281,7 @@ class TestAmenity_to_dict_method(unittest.TestCase):
         """
         a1 = Amenity()
         with self.assertRaises(TypeError):
-           a1.to_dict(None)
+            a1.to_dict(None)
 
     def test_instantiation_to_dict_with_attributes(self):
         """
