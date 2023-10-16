@@ -137,8 +137,10 @@ class TestFileStorage_methods(unittest.TestCase):
         """verify if JSON file exists"""
         b1 = BaseModel()
         b1.save()
-        self.assertEqual(os.path.exists(models.storage._FileStorage__file_path), True)
-        self.assertEqual(models.storage.all(), models.storage._FileStorage__objects)
+        self.assertEqual(
+                os.path.exists(models.storage._FileStorage__file_path), True)
+        self.assertEqual(
+                models.storage.all(), models.storage._FileStorage__objects)
 
     def test_save(self):
         """Test if save method works"""

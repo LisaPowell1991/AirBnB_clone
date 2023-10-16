@@ -5,7 +5,7 @@ The Unittest for Amenity
 import unittest
 from datetime import datetime
 from time import sleep
-
+import os
 from models import storage
 from models.amenity import Amenity
 
@@ -14,6 +14,22 @@ class TestAmenity_Instantiation(unittest.TestCase):
     """
     Unittests for testing instantiation of Amenity class
     """
+
+    @classmethod
+    def setUpClass(cls):
+        """Setup the unittest"""
+        cls.amenity = Amenity()
+        cls.amenity.name = "Test"
+
+    @classmethod
+    def tearDownClass(cls):
+        """Tear down unittest"""
+        del cls.amenity
+        try:
+            os.remove("file.json")
+        except FileNotFoundError:
+            pass
+
     def test_instantiation(self):
         """
         Test instantiation of Amenity class
