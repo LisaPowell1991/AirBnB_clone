@@ -6,7 +6,7 @@ A command-line interpreter for the HBNB project.
 
 import cmd
 from models.base_model import BaseModel
-from models.engine.file_storage import FileStorage
+# from models.engine.file_storage import FileStorage
 
 
 class HBNBCommand(cmd.Cmd):
@@ -34,6 +34,7 @@ class HBNBCommand(cmd.Cmd):
         Show the str representation of an instance.
         Usage: show <class_name> <id>
         """
+        from models.engine.file_storage import FileStorage
         args = arg.split()
         if len(args) == 0:
             print("** class name missing **")
@@ -44,7 +45,8 @@ class HBNBCommand(cmd.Cmd):
         class_name = args[0]
         obj_id = args[1]
         try:
-            obj = FileStorage().all()[f"{class_name}.{obj_id}"]
+            obj = FileStorage.all(self)[f"{class_name}.{obj_id}"]
+
             print(obj)
         except KeyError:
             print("** no instance found **")
@@ -56,6 +58,8 @@ class HBNBCommand(cmd.Cmd):
 
         Usage: destroy <class_name> <id>
         """
+        from models.engine.file_storage import FileStorage
+
         args = arg.split()
         if len(args) == 0:
             print("** class name missing **")
@@ -66,26 +70,29 @@ class HBNBCommand(cmd.Cmd):
         class_name = args[0]
         obj_id = args[1]
         try:
-            obj = FileStorage().all()[f"{class_name}.{obj_id}"]
-            del FileStorage().all()[f"{class_name}.{obj_id}"]
-            FileStorage.save()
+            obj = FileStorage.all(self)[f"{class_name}.{obj_id}"]
+            del FileStorage.all(self)[f"{class_name}.{obj_id}"]
+            FileStorage.save(self)
         except KeyError:
             print("** no instance found **")
 
     def do_all(self, arg):
         """
-        Display all instances or all instances
-        of a specific class.
-
-        Usage: all or all<class_name>
+        Display all instances of a specific class.
+        Usage: all <class_name>
         """
+        from models.engine.file_storage import FileStorage
+
         objects = FileStorage.all(self)
-        if not arg:
-            print([str(obj) for obj in objects.values()])
+        args = arg.split()
+
+        if len(args) == 0:
+            print("** class name missing **")
         else:
+            class_name = args[0]
             try:
-                class_name = arg
-                print([str(obj) for obj in objects.value()
+                eval(class_name)
+                print([str(obj) for obj in objects.values()
                       if obj.__class__.__name__ == class_name])
             except NameError:
                 print("** class doesn't exist **")
@@ -95,6 +102,7 @@ class HBNBCommand(cmd.Cmd):
         Update an instance based on the class name and id.
         Usage: update <class_name> <id> <attribute name> "<attribute value>"
         """
+        from models.engine.file_storage import FileStorage
         args = arg.split()
         if len(args) == 0:
             print("** class name missing **")
@@ -113,7 +121,8 @@ class HBNBCommand(cmd.Cmd):
         attr_name = args[2]
         attr_value = args[3]
         try:
-            obj = FileStorage().all()[f"{class_name}.{obj_id}"]
+            obj = FileStorage.all(self)[f"{class_name}.{obj_id}"]
+
             setattr(obj, attr_name, attr_value)
             obj.save()
         except KeyError:
