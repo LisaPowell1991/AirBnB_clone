@@ -217,7 +217,7 @@ class TestPlace_save_method(unittest.TestCase):
         """
         p1 = Place()
         with self.assertRaises(TypeError):
-          p1.save(None)
+            p1.save(None)
 
 
 class TestPlace_to_dict_method(unittest.TestCase):
@@ -281,7 +281,7 @@ class TestPlace_to_dict_method(unittest.TestCase):
         """
         p1 = Place()
         with self.assertRaises(TypeError):
-           p1.to_dict(None)
+            p1.to_dict(None)
 
     def test_instantiation_to_dict_with_attributes(self):
         """
