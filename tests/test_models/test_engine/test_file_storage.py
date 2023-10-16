@@ -32,6 +32,13 @@ class TestFileStorage_instantiation(unittest.TestCase):
         with self.assertRaises(TypeError):
             FileStorage(None)
 
+    def test_all_returns_dict(self):
+        """Test that all returns the FileStorage.__objects attr"""
+        storage = FileStorage()
+        new_dict = storage.all()
+        self.assertEqual(type(new_dict), dict)
+        self.assertIs(new_dict, FileStorage._FileStorage__objects)
+
     def test_FileStorage_file_path_is_private_str(self):
         """Test if file path attribute is private"""
         self.assertEqual(str, type(FileStorage._FileStorage__file_path))
@@ -118,6 +125,20 @@ class TestFileStorage_methods(unittest.TestCase):
         """Test if new works with no args"""
         with self.assertRaises(AttributeError):
             models.storage.new(None)
+
+    def test_save_self(self):
+        """Check save self"""
+        msg = "save() takes 1 positional argument but 2 were given"
+        with self.assertRaises(TypeError) as e:
+            FileStorage.save(self, 100)
+        self.assertEqual(str(e.exception), msg)
+
+    def test_save_JSON(self):
+        """verify if JSON file exists"""
+        b1 = BaseModel()
+        b1.save()
+        self.assertEqual(os.path.exists(models.storage._FileStorage__file_path), True)
+        self.assertEqual(models.storage.all(), models.storage._FileStorage__objects)
 
     def test_save(self):
         """Test if save method works"""

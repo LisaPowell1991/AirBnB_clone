@@ -56,7 +56,7 @@ class TestHBNBCommand_help(unittest.TestCase):
         """
         Test if help works
         """
-        h = "Quit command"
+        h = "Exit the command interpreter.\n        Usage: quit"
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help quit"))
             self.assertEqual(h, output.getvalue().strip())
