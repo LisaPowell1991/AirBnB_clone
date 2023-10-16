@@ -218,6 +218,16 @@ class TestBaseModel_save_method(unittest.TestCase):
         with self.assertRaises(TypeError):
             b1.save(None)
 
+    def test_save_method_does_not_raise_exception(self):
+        """
+        Test if save method doesn't raise exceptions
+        """
+        b1 = BaseModel()
+        try:
+            b1.save()
+        except Exception as e:
+            self.fail(f"save() method raised an exception: {e}")
+
 
 class TestBaseModel_to_dict_method(unittest.TestCase):
     """
