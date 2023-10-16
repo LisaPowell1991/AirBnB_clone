@@ -1,4 +1,4 @@
-#!/usr/bin/python4
+#!/usr/bin/python3
 """
 A command-line interpreter for the HBNB project.
 """
