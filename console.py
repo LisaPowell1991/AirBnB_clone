@@ -44,7 +44,7 @@ class HBNBCommand(cmd.Cmd):
         class_name = args[0]
         obj_id = args[1]
         try:
-            obj = storage.all()[f"{class_name}.{obj_id}"]
+            obj = FileStorage().all()[f"{class_name}.{obj_id}"]
             print(obj)
         except KeyError:
             print("** no instance found **")
@@ -66,9 +66,9 @@ class HBNBCommand(cmd.Cmd):
         class_name = args[0]
         obj_id = args[1]
         try:
-            obj = storage.all()[f"{class_name}.{obj_id}"]
-            del storage.all()[f"{class_name}.{obj_id}"]
-            storage.save()
+            obj = FileStorage().all()[f"{class_name}.{obj_id}"]
+            del FileStorage().all()[f"{class_name}.{obj_id}"]
+            FileStorage.save()
         except KeyError:
             print("** no instance found **")
 
@@ -113,7 +113,7 @@ class HBNBCommand(cmd.Cmd):
         attr_name = args[2]
         attr_value = args[3]
         try:
-            obj = storage.all()[f"{class_name}.{obj_id}"]
+            obj = FileStorage().all()[f"{class_name}.{obj_id}"]
             setattr(obj, attr_name, attr_value)
             obj.save()
         except KeyError:
