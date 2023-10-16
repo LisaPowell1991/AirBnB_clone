@@ -6,7 +6,12 @@ A command-line interpreter for the HBNB project.
 
 import cmd
 from models.base_model import BaseModel
-# from models.engine.file_storage import FileStorage
+from models.amenity import Amenity
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.state import State
+from models.user import User
 
 
 class HBNBCommand(cmd.Cmd):
@@ -46,7 +51,6 @@ class HBNBCommand(cmd.Cmd):
         obj_id = args[1]
         try:
             obj = FileStorage.all(self)[f"{class_name}.{obj_id}"]
-
             print(obj)
         except KeyError:
             print("** no instance found **")
@@ -122,7 +126,6 @@ class HBNBCommand(cmd.Cmd):
         attr_value = args[3]
         try:
             obj = FileStorage.all(self)[f"{class_name}.{obj_id}"]
-
             setattr(obj, attr_name, attr_value)
             obj.save()
         except KeyError:
