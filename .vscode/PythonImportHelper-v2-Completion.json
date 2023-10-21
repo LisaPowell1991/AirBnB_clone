@@ -1,0 +1,848 @@
+[
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "isExtraImport": true,
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "models",
+        "description": "models",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "FileStorage",
+        "importPath": "models.engine.file_storage",
+        "description": "models.engine.file_storage",
+        "isExtraImport": true,
+        "detail": "models.engine.file_storage",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "models.state",
+        "description": "models.state",
+        "isExtraImport": true,
+        "detail": "models.state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "models.state",
+        "description": "models.state",
+        "isExtraImport": true,
+        "detail": "models.state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "models.state",
+        "description": "models.state",
+        "isExtraImport": true,
+        "detail": "models.state",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "importPath": "models.place",
+        "description": "models.place",
+        "isExtraImport": true,
+        "detail": "models.place",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "importPath": "models.place",
+        "description": "models.place",
+        "isExtraImport": true,
+        "detail": "models.place",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "importPath": "models.place",
+        "description": "models.place",
+        "isExtraImport": true,
+        "detail": "models.place",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "importPath": "models.city",
+        "description": "models.city",
+        "isExtraImport": true,
+        "detail": "models.city",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "importPath": "models.city",
+        "description": "models.city",
+        "isExtraImport": true,
+        "detail": "models.city",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "importPath": "models.city",
+        "description": "models.city",
+        "isExtraImport": true,
+        "detail": "models.city",
+        "documentation": {}
+    },
+    {
+        "label": "Amenity",
+        "importPath": "models.amenity",
+        "description": "models.amenity",
+        "isExtraImport": true,
+        "detail": "models.amenity",
+        "documentation": {}
+    },
+    {
+        "label": "Amenity",
+        "importPath": "models.amenity",
+        "description": "models.amenity",
+        "isExtraImport": true,
+        "detail": "models.amenity",
+        "documentation": {}
+    },
+    {
+        "label": "Amenity",
+        "importPath": "models.amenity",
+        "description": "models.amenity",
+        "isExtraImport": true,
+        "detail": "models.amenity",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "importPath": "models.review",
+        "description": "models.review",
+        "isExtraImport": true,
+        "detail": "models.review",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "importPath": "models.review",
+        "description": "models.review",
+        "isExtraImport": true,
+        "detail": "models.review",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "importPath": "models.review",
+        "description": "models.review",
+        "isExtraImport": true,
+        "detail": "models.review",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "HBNBCommand",
+        "importPath": "console",
+        "description": "console",
+        "isExtraImport": true,
+        "detail": "console",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "StringIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "inspect",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "inspect",
+        "description": "inspect",
+        "detail": "inspect",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "cmd",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cmd",
+        "description": "cmd",
+        "detail": "cmd",
+        "documentation": {}
+    },
+    {
+        "label": "FileStorage",
+        "kind": 6,
+        "importPath": "models.engine.file_storage",
+        "description": "models.engine.file_storage",
+        "peekOfCode": "class FileStorage:\n    \"\"\"\n    File Storage Class\n    \"\"\"\n    __file_path = \"file.json\"\n    __objects = {}\n    def all(self):\n        \"\"\" Return all objects in storage or a specific class.\"\"\"\n        return FileStorage.__objects\n    def new(self, obj):",
+        "detail": "models.engine.file_storage",
+        "documentation": {}
+    },
+    {
+        "label": "Amenity",
+        "kind": 6,
+        "importPath": "models.amenity",
+        "description": "models.amenity",
+        "peekOfCode": "class Amenity(BaseModel):\n    \"\"\"Amenity class\"\"\"\n    name = \"\"",
+        "detail": "models.amenity",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "kind": 6,
+        "importPath": "models.base_model",
+        "description": "models.base_model",
+        "peekOfCode": "class BaseModel:\n    \"\"\"\n    A class that represents a base model.\n    \"\"\"\n    def __init__(self, *args, **kwargs):\n        \"\"\"\n        Initializes the BaseModel class.\n        Args:\n        *args: unused.\n        **kwargs: Arbitrary keyword arguments.",
+        "detail": "models.base_model",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "kind": 6,
+        "importPath": "models.city",
+        "description": "models.city",
+        "peekOfCode": "class City(BaseModel):\n    \"\"\"City class\"\"\"\n    state_id = \"\"\n    name = \"\"",
+        "detail": "models.city",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "kind": 6,
+        "importPath": "models.place",
+        "description": "models.place",
+        "peekOfCode": "class Place(BaseModel):\n    \"\"\"Place class\"\"\"\n    city_id = \"\"\n    user_id = \"\"\n    name = \"\"\n    description = \"\"\n    number_rooms = 0\n    number_bathrooms = 0\n    max_guest = 0\n    price_by_night = 0",
+        "detail": "models.place",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "kind": 6,
+        "importPath": "models.review",
+        "description": "models.review",
+        "peekOfCode": "class Review(BaseModel):\n    \"\"\" Review class \"\"\"\n    place_id = \"\"\n    user_id = \"\"\n    text = \"\"",
+        "detail": "models.review",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "models.state",
+        "description": "models.state",
+        "peekOfCode": "class State(BaseModel):\n    \"\"\"State class\"\"\"\n    name = \"\"",
+        "detail": "models.state",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models.user",
+        "description": "models.user",
+        "peekOfCode": "class User(BaseModel):\n    \"\"\"User class\"\"\"\n    email = \"\"\n    password = \"\"\n    first_name = \"\"\n    last_name = \"\"\n    def __init__(self, *args, **kwargs):\n        \"\"\"User constructor\"\"\"\n        super().__init__(*args, **kwargs)",
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "TestFileStorage_instantiation",
+        "kind": 6,
+        "importPath": "tests.test_models.test_engine.test_file_storage",
+        "description": "tests.test_models.test_engine.test_file_storage",
+        "peekOfCode": "class TestFileStorage_instantiation(unittest.TestCase):\n    \"\"\"Unittests for testing instantiation of the FileStorage class.\"\"\"\n    def test_FileStorage_instantiation_no_args(self):\n        \"\"\"Test if FileStorage instantiation is correct type\"\"\"\n        self.assertEqual(type(FileStorage()), FileStorage)\n    def test_FileStorage_instantiation_with_arg(self):\n        \"\"\"Test if FileStorage instantiation works without args\"\"\"\n        with self.assertRaises(TypeError):\n            FileStorage(None)\n    def test_all_returns_dict(self):",
+        "detail": "tests.test_models.test_engine.test_file_storage",
+        "documentation": {}
+    },
+    {
+        "label": "TestFileStorage_methods",
+        "kind": 6,
+        "importPath": "tests.test_models.test_engine.test_file_storage",
+        "description": "tests.test_models.test_engine.test_file_storage",
+        "peekOfCode": "class TestFileStorage_methods(unittest.TestCase):\n    \"\"\"Unittests for testing methods of the FileStorage class.\"\"\"\n    @classmethod\n    def setUp(self):\n        \"\"\"Set up unittest\"\"\"\n        try:\n            os.rename(\"file.json\", \"tmp\")\n        except IOError:\n            pass\n    @classmethod",
+        "detail": "tests.test_models.test_engine.test_file_storage",
+        "documentation": {}
+    },
+    {
+        "label": "TestAmenity_Instantiation",
+        "kind": 6,
+        "importPath": "tests.test_models.test_amenity",
+        "description": "tests.test_models.test_amenity",
+        "peekOfCode": "class TestAmenity_Instantiation(unittest.TestCase):\n    \"\"\"\n    Unittests for testing instantiation of Amenity class\n    \"\"\"\n    @classmethod\n    def setUpClass(cls):\n        \"\"\"Setup the unittest\"\"\"\n        cls.amenity = Amenity()\n        cls.amenity.name = \"Test\"\n    @classmethod",
+        "detail": "tests.test_models.test_amenity",
+        "documentation": {}
+    },
+    {
+        "label": "TestAmenity_save_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_amenity",
+        "description": "tests.test_models.test_amenity",
+        "peekOfCode": "class TestAmenity_save_method(unittest.TestCase):\n    \"\"\"\n    Unittest for Amenity save method\n    \"\"\"\n    def test_instantiation_save(self):\n        \"\"\"\n        Test if save method saves instance to storage\n        \"\"\"\n        a1 = Amenity()\n        updated_at_1 = a1.updated_at",
+        "detail": "tests.test_models.test_amenity",
+        "documentation": {}
+    },
+    {
+        "label": "TestAmenity_to_dict_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_amenity",
+        "description": "tests.test_models.test_amenity",
+        "peekOfCode": "class TestAmenity_to_dict_method(unittest.TestCase):\n    \"\"\"\n    Unittests for Amenity to_dict method\n    \"\"\"\n    def test_instantiation_to_dict(self):\n        \"\"\"\n        Test if to_dict method returns a dictionary\n        \"\"\"\n        a1 = Amenity()\n        dic = a1.to_dict()",
+        "detail": "tests.test_models.test_amenity",
+        "documentation": {}
+    },
+    {
+        "label": "TestBaseModel_Instantiation",
+        "kind": 6,
+        "importPath": "tests.test_models.test_base_model",
+        "description": "tests.test_models.test_base_model",
+        "peekOfCode": "class TestBaseModel_Instantiation(unittest.TestCase):\n    \"\"\"\n    Unittests for testing instantiation of BaseModel class\n    \"\"\"\n    def test_instantiation(self):\n        \"\"\"\n        Test instantiation of BaseModel class\n        \"\"\"\n        b1 = BaseModel()\n        self.assertIsInstance(b1, BaseModel)",
+        "detail": "tests.test_models.test_base_model",
+        "documentation": {}
+    },
+    {
+        "label": "TestBaseModel_save_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_base_model",
+        "description": "tests.test_models.test_base_model",
+        "peekOfCode": "class TestBaseModel_save_method(unittest.TestCase):\n    \"\"\"\n    Unittest for BaseModel save method\n    \"\"\"\n    def test_instantiation_save(self):\n        \"\"\"\n        Test if save method saves instance to storage\n        \"\"\"\n        b1 = BaseModel()\n        updated_at_1 = b1.updated_at",
+        "detail": "tests.test_models.test_base_model",
+        "documentation": {}
+    },
+    {
+        "label": "TestBaseModel_to_dict_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_base_model",
+        "description": "tests.test_models.test_base_model",
+        "peekOfCode": "class TestBaseModel_to_dict_method(unittest.TestCase):\n    \"\"\"\n    Unittests for BaseModel to_dict method\n    \"\"\"\n    def test_instantiation_to_dict(self):\n        \"\"\"\n        Test if to_dict method returns a dictionary\n        \"\"\"\n        b1 = BaseModel()\n        dic = b1.to_dict()",
+        "detail": "tests.test_models.test_base_model",
+        "documentation": {}
+    },
+    {
+        "label": "TestCity_instantiation",
+        "kind": 6,
+        "importPath": "tests.test_models.test_city",
+        "description": "tests.test_models.test_city",
+        "peekOfCode": "class TestCity_instantiation(unittest.TestCase):\n    \"\"\"Unittests for testing instantiation of the City class.\"\"\"\n    def test_no_args_instantiates(self):\n        \"\"\"\n        Test City type\n        \"\"\"\n        self.assertEqual(City, type(City()))\n    def test_new_instance_stored_in_objects(self):\n        \"\"\"\n        Test if City stores instance in storage",
+        "detail": "tests.test_models.test_city",
+        "documentation": {}
+    },
+    {
+        "label": "TestCity_save",
+        "kind": 6,
+        "importPath": "tests.test_models.test_city",
+        "description": "tests.test_models.test_city",
+        "peekOfCode": "class TestCity_save(unittest.TestCase):\n    \"\"\"Unittests for testing save method of the City class.\"\"\"\n    @classmethod\n    def setUp(self):\n        \"\"\"\n        Set up for unittest\n        \"\"\"\n        try:\n            os.rename(\"file.json\", \"tmp\")\n        except IOError:",
+        "detail": "tests.test_models.test_city",
+        "documentation": {}
+    },
+    {
+        "label": "TestCity_to_dict",
+        "kind": 6,
+        "importPath": "tests.test_models.test_city",
+        "description": "tests.test_models.test_city",
+        "peekOfCode": "class TestCity_to_dict(unittest.TestCase):\n    \"\"\"Unittests for testing to_dict method of the City class.\"\"\"\n    def test_to_dict_type(self):\n        \"\"\"\n        Test type of to_dict method return object\n        \"\"\"\n        self.assertTrue(dict, type(City().to_dict()))\n    def test_to_dict_contains_correct_keys(self):\n        \"\"\"\n        Check objects in to_dict return object",
+        "detail": "tests.test_models.test_city",
+        "documentation": {}
+    },
+    {
+        "label": "TestPlace_Instantiation",
+        "kind": 6,
+        "importPath": "tests.test_models.test_place",
+        "description": "tests.test_models.test_place",
+        "peekOfCode": "class TestPlace_Instantiation(unittest.TestCase):\n    \"\"\"\n    Unittests for testing instantiation of Place class\n    \"\"\"\n    def test_instantiation(self):\n        \"\"\"\n        Test instantiation of Place class\n        \"\"\"\n        p1 = Place()\n        self.assertIsInstance(p1, Place)",
+        "detail": "tests.test_models.test_place",
+        "documentation": {}
+    },
+    {
+        "label": "TestPlace_save_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_place",
+        "description": "tests.test_models.test_place",
+        "peekOfCode": "class TestPlace_save_method(unittest.TestCase):\n    \"\"\"\n    Unittest for Place save method\n    \"\"\"\n    def test_instantiation_save(self):\n        \"\"\"\n        Test if save method saves instance to storage\n        \"\"\"\n        p1 = Place()\n        updated_at_1 = p1.updated_at",
+        "detail": "tests.test_models.test_place",
+        "documentation": {}
+    },
+    {
+        "label": "TestPlace_to_dict_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_place",
+        "description": "tests.test_models.test_place",
+        "peekOfCode": "class TestPlace_to_dict_method(unittest.TestCase):\n    \"\"\"\n    Unittests for Place to_dict method\n    \"\"\"\n    def test_instantiation_to_dict(self):\n        \"\"\"\n        Test if to_dict method returns a dictionary\n        \"\"\"\n        p1 = Place()\n        dic = p1.to_dict()",
+        "detail": "tests.test_models.test_place",
+        "documentation": {}
+    },
+    {
+        "label": "TestReview_Instantiation",
+        "kind": 6,
+        "importPath": "tests.test_models.test_review",
+        "description": "tests.test_models.test_review",
+        "peekOfCode": "class TestReview_Instantiation(unittest.TestCase):\n    \"\"\"\n    Unittests for testing instantiation of Review class\n    \"\"\"\n    def test_instantiation(self):\n        \"\"\"\n        Test instantiation of Review class\n        \"\"\"\n        r1 = Review()\n        self.assertIsInstance(r1, Review)",
+        "detail": "tests.test_models.test_review",
+        "documentation": {}
+    },
+    {
+        "label": "TestReview_save_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_review",
+        "description": "tests.test_models.test_review",
+        "peekOfCode": "class TestReview_save_method(unittest.TestCase):\n    \"\"\"\n    Unittest for Review save method\n    \"\"\"\n    def test_instantiation_save(self):\n        \"\"\"\n        Test if save method saves instance to storage\n        \"\"\"\n        r1 = Review()\n        updated_at_1 = r1.updated_at",
+        "detail": "tests.test_models.test_review",
+        "documentation": {}
+    },
+    {
+        "label": "TestReview_to_dict_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_review",
+        "description": "tests.test_models.test_review",
+        "peekOfCode": "class TestReview_to_dict_method(unittest.TestCase):\n    \"\"\"\n    Unittests for Review to_dict method\n    \"\"\"\n    def test_instantiation_to_dict(self):\n        \"\"\"\n        Test if to_dict method returns a dictionary\n        \"\"\"\n        r1 = Review()\n        dic = r1.to_dict()",
+        "detail": "tests.test_models.test_review",
+        "documentation": {}
+    },
+    {
+        "label": "TestState_Instantiation",
+        "kind": 6,
+        "importPath": "tests.test_models.test_state",
+        "description": "tests.test_models.test_state",
+        "peekOfCode": "class TestState_Instantiation(unittest.TestCase):\n    \"\"\"\n    Unittests for testing instantiation of State class\n    \"\"\"\n    def test_instantiation(self):\n        \"\"\"\n        Test instantiation of State class\n        \"\"\"\n        s1 = State()\n        self.assertIsInstance(s1, State)",
+        "detail": "tests.test_models.test_state",
+        "documentation": {}
+    },
+    {
+        "label": "TestState_save_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_state",
+        "description": "tests.test_models.test_state",
+        "peekOfCode": "class TestState_save_method(unittest.TestCase):\n    \"\"\"\n    Unittest for State save method\n    \"\"\"\n    def test_instantiation_save(self):\n        \"\"\"\n        Test if save method saves instance to storage\n        \"\"\"\n        s1 = State()\n        updated_at_1 = s1.updated_at",
+        "detail": "tests.test_models.test_state",
+        "documentation": {}
+    },
+    {
+        "label": "TestState_to_dict_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_state",
+        "description": "tests.test_models.test_state",
+        "peekOfCode": "class TestState_to_dict_method(unittest.TestCase):\n    \"\"\"\n    Unittests for State to_dict method\n    \"\"\"\n    def test_instantiation_to_dict(self):\n        \"\"\"\n        Test if to_dict method returns a dictionary\n        \"\"\"\n        s1 = State()\n        dic = s1.to_dict()",
+        "detail": "tests.test_models.test_state",
+        "documentation": {}
+    },
+    {
+        "label": "TestUser_Instantiation",
+        "kind": 6,
+        "importPath": "tests.test_models.test_user",
+        "description": "tests.test_models.test_user",
+        "peekOfCode": "class TestUser_Instantiation(unittest.TestCase):\n    \"\"\"\n    Unittests for testing instantiation of User class\n    \"\"\"\n    def test_instantiation(self):\n        \"\"\"\n        Test instantiation of User class\n        \"\"\"\n        u1 = User()\n        self.assertIsInstance(u1, User)",
+        "detail": "tests.test_models.test_user",
+        "documentation": {}
+    },
+    {
+        "label": "TestUser_save_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_user",
+        "description": "tests.test_models.test_user",
+        "peekOfCode": "class TestUser_save_method(unittest.TestCase):\n    \"\"\"\n    Unittest for User save method\n    \"\"\"\n    def test_instantiation_save(self):\n        \"\"\"\n        Test if save method saves instance to storage\n        \"\"\"\n        u1 = User()\n        updated_at_1 = u1.updated_at",
+        "detail": "tests.test_models.test_user",
+        "documentation": {}
+    },
+    {
+        "label": "TestUser_to_dict_method",
+        "kind": 6,
+        "importPath": "tests.test_models.test_user",
+        "description": "tests.test_models.test_user",
+        "peekOfCode": "class TestUser_to_dict_method(unittest.TestCase):\n    \"\"\"\n    Unittests for User to_dict method\n    \"\"\"\n    def test_instantiation_to_dict(self):\n        \"\"\"\n        Test if to_dict method returns a dictionary\n        \"\"\"\n        u1 = User()\n        dic = u1.to_dict()",
+        "detail": "tests.test_models.test_user",
+        "documentation": {}
+    },
+    {
+        "label": "TestHBNBCommand_prompting",
+        "kind": 6,
+        "importPath": "tests.test_console",
+        "description": "tests.test_console",
+        "peekOfCode": "class TestHBNBCommand_prompting(unittest.TestCase):\n    \"\"\"\n    Unittests for HBNBCommand prompting\n    \"\"\"\n    def test_instantiation(self):\n        \"\"\"\n        Test if prompt is instantiated\n        \"\"\"\n        self.assertEqual(\"(hbnb) \", HBNBCommand.prompt)\n    def test_instantiation_empty_line(self):",
+        "detail": "tests.test_console",
+        "documentation": {}
+    },
+    {
+        "label": "TestHBNBCommand_exit",
+        "kind": 6,
+        "importPath": "tests.test_console",
+        "description": "tests.test_console",
+        "peekOfCode": "class TestHBNBCommand_exit(unittest.TestCase):\n    \"\"\"\n    Unittest for HBNBCommand exit\n    \"\"\"\n    def test_instantiation_quit(self):\n        \"\"\"\n        Test if quit is instantiated\n        \"\"\"\n        with patch(\"sys.stdout\", new=StringIO()) as output:\n            self.assertTrue(HBNBCommand().onecmd(\"quit\"))",
+        "detail": "tests.test_console",
+        "documentation": {}
+    },
+    {
+        "label": "TestHBNBCommand_help",
+        "kind": 6,
+        "importPath": "tests.test_console",
+        "description": "tests.test_console",
+        "peekOfCode": "class TestHBNBCommand_help(unittest.TestCase):\n    \"\"\"\n    Unittest for HBNBCommand create\n    \"\"\"\n    def test_instantiation_help(self):\n        \"\"\"\n        Test if help works\n        \"\"\"\n        h = \"Exit the command interpreter.\\n        Usage: quit\"\n        with patch(\"sys.stdout\", new=StringIO()) as output:",
+        "detail": "tests.test_console",
+        "documentation": {}
+    },
+    {
+        "label": "TestHBNBCommand_show",
+        "kind": 6,
+        "importPath": "tests.test_console",
+        "description": "tests.test_console",
+        "peekOfCode": "class TestHBNBCommand_show(unittest.TestCase):\n    \"\"\"\n    Unittests for Show command\n    \"\"\"\n    def test_instantiation_show(self):\n        \"\"\"\n        Test if show works\n        \"\"\"\n        correct = \"** instance id missing **\"\n        with patch(\"sys.stdout\", new=StringIO()) as output:",
+        "detail": "tests.test_console",
+        "documentation": {}
+    },
+    {
+        "label": "TestHBNBCommand_destroy",
+        "kind": 6,
+        "importPath": "tests.test_console",
+        "description": "tests.test_console",
+        "peekOfCode": "class TestHBNBCommand_destroy(unittest.TestCase):\n    \"\"\"\n    Unittests for Destroy command\n    \"\"\"\n    def test_instantiation_destroy_no_object(self):\n        \"\"\"\n        Test if destroy works\n        \"\"\"\n        with patch(\"sys.stdout\", new=StringIO()) as output:\n            self.assertFalse(HBNBCommand().onecmd(\"destroy\"))",
+        "detail": "tests.test_console",
+        "documentation": {}
+    },
+    {
+        "label": "HBNBCommand",
+        "kind": 6,
+        "importPath": "console",
+        "description": "console",
+        "peekOfCode": "class HBNBCommand(cmd.Cmd):\n    \"\"\" Class for the command interpreter. \"\"\"\n    prompt = \"(hbnb) \"\n    def do_create(self, arg):\n        \"\"\"\n        Creates a new instance of a class.\n        Usage: create <class_name>\n        \"\"\"\n        if not arg:\n            print(\"** class name missing **\")",
+        "detail": "console",
+        "documentation": {}
+    }
+]
